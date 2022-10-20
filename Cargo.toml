@@ -1,8 +1,8 @@
 [package]
-name = "bevy_game" # ToDo
+name = "tic-tac-toe"
 version = "0.1.0"
 publish = false
-authors = ["Niklas Eicker <git@nikl.me>"] # ToDo: you are the author ;)
+authors = ["PinYu1618 <pycc1618@gmail.com>"]
 edition = "2021"
 exclude = ["dist", "build", "assets", "credits"]
 
@@ -22,14 +22,13 @@ dev = [
 ]
 
 [dependencies]
-bevy = { version = "0.8", default-features = false, features = ["bevy_asset", "bevy_winit", "render", "png", "x11"] }
-bevy_kira_audio = { version = "0.12" }
+bevy = { version = "0.8.1" }
 bevy_asset_loader = { version = "0.12" }
 rand = { version = "0.8.3" }
-
-# keep the following in sync with Bevy's dependencies
-winit = { version = "0.26.0", default-features = false }
 image = { version = "0.24", default-features = false }
+lazy_static = "1.4.0"
+
+bevy-inspector-egui = { version = "0.13.0" }
 
 [build-dependencies]
 embed-resource = "1.4"
